@@ -1,0 +1,37 @@
+<template name="home">
+
+            <table class="postTable col-md-12 col-sm-12 col-lg-12">
+                <tbody>
+                {{#each posts}}
+                <tr class="post">
+                    <td class="upvote">
+                        <a class="upvote-link"></a>
+                        <span class="vote-count">{{vote}}</span>
+                    </td>
+                    <td class="user-with-tooltip">
+                        <img src="images/courtstarr.jpg" height="30" width="30">
+                        <p><a class="post-url">{{name}}</a></p>
+                    </td>
+                    <td class="col-sm-6 col-md-6 col-lg-6 url post-tagline">
+                        <cite class="text-muted ">{{projName}}</cite>
+                        <p class="projDesc"> {{projDesc}}</p>
+
+                    </td>
+                    <td class="col-sm-1 col-md-1 col-lg-1 url">
+                        <span>Comments <span class="badge">{{cmntNo}}</span></span>
+                    </td>
+                    <td class="col-sm-2 col-md-2 col-lg-2 url">
+                        <i class="fa fa-file-powerpoint-o iconsColor"></i>
+                        <i class="fa fa-file-video-o iconsColor"></i>
+                        <i class="fa fa-file iconsColor"></i>
+                    </td>
+
+                </tr>
+                {{/each}}
+                </tbody>
+
+            </table>
+
+
+
+</template>

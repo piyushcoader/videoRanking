@@ -1,0 +1,55 @@
+<template name="champion">
+    <h3 class="text-center">Company Champion Message</h3>
+
+    <div class="row">
+        {{#each messages}}
+        <div class="col-sm-12 col-md-6 col-lg-6">
+
+
+            <div class="">
+
+
+                <div class="col-sm-3 col-md-3 col-lg-3 sideIcons">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <p><i class="fa fa-2x fa-thumbs-up"></i></p>
+
+                        <p><i class="fa fa-2x fa-comments"></i></p>
+
+                        <p><i class="fa fa-2x fa-video-camera"></i></p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 badgesList">
+                        <p><span class="badge">{{likes}}</span></p>
+
+                        <p><span class="badge">{{comments}}</span></p>
+
+                        <p><span class="badge">{{video}}</span></p>
+                    </div>
+
+
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">
+                    <h5>{{messageName}}</h5>
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                    <video  width="100%"  controls="controls"
+                           style="background-color: #CCC">
+
+                    </video>
+                    </div>
+                    <br>
+                    <div style="padding-top: 10px;padding-left: 10px">
+                    <div class="col-sm-3 col-md-3 col-lg-3" style="padding-left: 5px">
+                        <p><img src="{{img}}"> </p>
+                        <p>{{name}}</p>
+
+                    </div>
+                    <div class="col-sm-9 col-md-9 col-lg-9">
+                        <p>{{desc}}</p>
+                        <p><button class="btn btn-sm btn-info">See more >></button> </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</template>

@@ -1,0 +1,112 @@
+/* CSS declarations go here */
+body{
+    margin-top: 70px;
+}
+.postTable{
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;
+}
+.upvote-link{
+
+    position: relative;
+    cursor: pointer;
+    bottom: 10px;
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-bottom: 12px solid #bbbbbb;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 12px solid transparent;
+}
+.upvote{
+    width: 30px;
+    text-align: center;
+}
+.upvote-link:hover{
+
+    border-bottom: 12px solid #0f7864;
+    color: #0f7864;
+    text-decoration: none;
+}
+.upvote .vote-count{
+    font-size: 12px;
+    display: block;
+    position: relative;
+    bottom: 10px;
+}
+.post{
+    font-size: 18px;
+    padding: 10px 0;
+    height: 50px;
+    vertical-align: top;
+    border-spacing: 0;
+}
+.date{
+    color: #bbbbbb;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: block;
+    padding-left: 26px;
+    padding-top: 4px;
+    position: relative;
+    background: url("images/date-icon.png") no-repeat;
+}
+.date-day{
+    color: #000;
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    text-align: center;
+    left: 5px;
+    top: 9px;
+    font-size: 8px;
+    font-weight: normal;
+}
+.user-with-tooltip {
+    width: 40px;
+    position: relative;
+}
+.url {
+
+
+}
+.post-url {
+
+    text-decoration: none;
+    color: #0f7864;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.post-tagline {
+    font-size: 17px;
+    color: #999999;
+
+}
+.view-discussion {
+    z-index: 100;
+}
+.projDesc{
+    border:  1px solid #000 ;
+    font-size: 14px;
+
+}
+.iconsColor{
+    cursor: pointer;
+    padding-left: 3px;
+    color:#0f7864;
+}
+.iconsColor:hover{
+        color: orangered;
+}
+.sideIcons{
+    margin-top: 50px;
+}
+.badgesList p{
+    padding-top: 8px;
+}

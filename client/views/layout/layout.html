@@ -1,0 +1,28 @@
+<template name="layout">
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Video Ranking</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+
+            <form class="navbar-form navbar-left">
+                <input type="text" class="form-control col-lg-8" placeholder="Search">
+            </form>
+            <ul class="nav navbar-nav ">
+
+                    <li class=""><a href="{{pathFor 'home'}}">Home</a></li>
+                    <li><a href="{{pathFor 'champion'}}">Champion</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+
+            {{>yield}}
+
+    </div>
+</template>
